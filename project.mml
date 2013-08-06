@@ -1,0 +1,93 @@
+{
+  "bounds": [
+    -5.3393,
+    41.2613,
+    9.7778,
+    51.1931
+  ],
+  "center": [
+    2.2852,
+    48.327,
+    6
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "MortCSV",
+    "template_teaser": "Prison : {{{Prison}}} / Noms : {{{Noms}}} /{{#Age}} Age : {{{Age}}}ans / {{/Age}} Mort par : {{{MortPar}}}, le {{{DateTime}}} {{#InfoSup}}/ Infos supplémentaires : {{{InfoSup}}}{{/InfoSup}}",
+    "fields": [
+      "Prison",
+      "Noms",
+      "Age",
+      "MortPar",
+      "DateTime",
+      "InfoSup"
+    ]
+  },
+  "minzoom": 6,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "autopilot.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape",
+        "id": "countries",
+        "project": "Morts_prison",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      }
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        2.030686,
+        47.09528,
+        2.3988900000000006,
+        48.806171
+      ],
+      "id": "MortCSV",
+      "class": "",
+      "Datasource": {
+        "file": "http://temp.sharesand.info/prison/taule.csv",
+        "id": "MortCSV",
+        "project": "Morts_prison",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "MortCSV"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -180,
+        -85.051,
+        180,
+        85.051
+      ],
+      "id": "texture",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/physical/10m-900913-bounding-box.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "texture"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "Les_morts_des_prisons",
+  "description": "Voir : http://vivresaprison.overblog.com/",
+  "legend": "<a href=\"https://twitter.com/VivreSaPrison\" @VivreSaPrison><img src=\"https://si0.twimg.com/profile_images/378800000250237940/bd56f57d41a0a4b223c2ad15485cb36f_bigger.jpeg\" />",
+  "attribution": ""
+}
