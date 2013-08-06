@@ -13,7 +13,7 @@
   "format": "png",
   "interactivity": {
     "layer": "MortCSV",
-    "template_teaser": "Prison : {{{Prison}}} / Noms : {{{Noms}}} /{{#Age}} Age : {{{Age}}}ans / {{/Age}} Mort par : {{{MortPar}}}, le {{{DateTime}}} {{#InfoSup}}/ Infos supplémentaires : {{{InfoSup}}}{{/InfoSup}}",
+    "template_teaser": "Prison : {{{Prison}}} <br> \nNoms : {{{Noms}}} <br>\n{{#Age}} Age : {{{Age}}}ans <br>{{/Age}}\nMort {{#MortPar}}par : {{{MortPar}}}, {{/MortPar}}\nle {{{DateTime}}}<br>\n{{#InfoSup}} Infos supplémentaires : {{{InfoSup}}}{{/InfoSup}}",
     "fields": [
       "Prison",
       "Noms",
