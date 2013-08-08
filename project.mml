@@ -6,8 +6,8 @@
     51.1931
   ],
   "center": [
-    2.2852,
-    48.327,
+    2.439,
+    48.1001,
     6
   ],
   "format": "png",
@@ -24,7 +24,7 @@
     ]
   },
   "minzoom": 6,
-  "maxzoom": 8,
+  "maxzoom": 9,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "autopilot.mss"
@@ -46,10 +46,10 @@
     {
       "geometry": "point",
       "extent": [
-        2.030686,
-        47.09528,
-        2.3988900000000006,
-        48.806171
+        -1.674238,
+        43.232916,
+        7.344464,
+        49.099583
       ],
       "id": "MortCSV",
       "class": "",
@@ -81,6 +81,24 @@
       "srs": "",
       "advanced": {},
       "name": "texture"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        0.000008983152841195214,
+        0.000008983152840993819,
+        0.0004042418778537846,
+        0.0004042418778447218
+      ],
+      "id": "wkt",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/benoitpro/Downloads/wkt.csv"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "wkt"
     }
   ],
   "scale": 1,
